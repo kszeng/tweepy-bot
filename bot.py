@@ -15,9 +15,9 @@ while True:
                            wait_on_rate_limit=True)
 
     # create simple query for recent tweet search
-    query = 'from:cnnbrk'
+    query = 'from:CNNnewsroom'
     tweets = client.search_recent_tweets(query=query,
-                                         max_results=50,
+                                         max_results=100,
                                          user_auth=True)
 
     tweet_list = []
